@@ -15,6 +15,12 @@
 		8CD759F223A471BF00C25612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD759F023A471BF00C25612 /* LaunchScreen.storyboard */; };
 		8CD759FD23A471C000C25612 /* CalibreSync4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD759FC23A471C000C25612 /* CalibreSync4Tests.swift */; };
 		8CD75A0823A471C000C25612 /* CalibreSync4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A0723A471C000C25612 /* CalibreSync4UITests.swift */; };
+		8CD75A1823A4746300C25612 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A1723A4746300C25612 /* SetupView.swift */; };
+		8CD75A1C23A474DA00C25612 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A1B23A474DA00C25612 /* AppView.swift */; };
+		8CD75A2023A475B800C25612 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A1F23A475B800C25612 /* HomeView.swift */; };
+		8CD75A2223A475C900C25612 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A2123A475C900C25612 /* LibraryView.swift */; };
+		8CD75A2623A4785500C25612 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A2523A4785400C25612 /* Store.swift */; };
+		8CD75A2923A4797600C25612 /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD75A2823A4797600C25612 /* Published.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		8CD75A0323A471C000C25612 /* CalibreSync4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalibreSync4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD75A0723A471C000C25612 /* CalibreSync4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibreSync4UITests.swift; sourceTree = "<group>"; };
 		8CD75A0923A471C000C25612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD75A1723A4746300C25612 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		8CD75A1B23A474DA00C25612 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		8CD75A1F23A475B800C25612 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8CD75A2123A475C900C25612 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		8CD75A2523A4785400C25612 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8CD75A2823A4797600C25612 /* Published.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Published.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,10 @@
 		8CD759E423A471BC00C25612 /* CalibreSync4 */ = {
 			isa = PBXGroup;
 			children = (
-				8CD759E523A471BC00C25612 /* AppDelegate.swift */,
-				8CD759E723A471BC00C25612 /* SceneDelegate.swift */,
-				8CD759E923A471BC00C25612 /* ContentView.swift */,
+				8CD75A1523A4727800C25612 /* Delegates */,
+				8CD75A2A23A4797C00C25612 /* Property Wrappers */,
+				8CD75A2723A4786900C25612 /* Stores */,
+				8CD75A1623A4729700C25612 /* Views */,
 				8CD759EB23A471BF00C25612 /* Assets.xcassets */,
 				8CD759F023A471BF00C25612 /* LaunchScreen.storyboard */,
 				8CD759F323A471BF00C25612 /* Info.plist */,
@@ -134,6 +147,75 @@
 				8CD75A0923A471C000C25612 /* Info.plist */,
 			);
 			path = CalibreSync4UITests;
+			sourceTree = "<group>";
+		};
+		8CD75A1523A4727800C25612 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8CD759E523A471BC00C25612 /* AppDelegate.swift */,
+				8CD759E723A471BC00C25612 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		8CD75A1623A4729700C25612 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A1D23A474E500C25612 /* SetupView */,
+				8CD75A1E23A474F800C25612 /* AppView */,
+				8CD759E923A471BC00C25612 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CD75A1D23A474E500C25612 /* SetupView */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A1723A4746300C25612 /* SetupView.swift */,
+			);
+			path = SetupView;
+			sourceTree = "<group>";
+		};
+		8CD75A1E23A474F800C25612 /* AppView */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A2323A475D200C25612 /* HomeView */,
+				8CD75A2423A475D900C25612 /* LibraryView */,
+				8CD75A1B23A474DA00C25612 /* AppView.swift */,
+			);
+			path = AppView;
+			sourceTree = "<group>";
+		};
+		8CD75A2323A475D200C25612 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A1F23A475B800C25612 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		8CD75A2423A475D900C25612 /* LibraryView */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A2123A475C900C25612 /* LibraryView.swift */,
+			);
+			path = LibraryView;
+			sourceTree = "<group>";
+		};
+		8CD75A2723A4786900C25612 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A2523A4785400C25612 /* Store.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		8CD75A2A23A4797C00C25612 /* Property Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				8CD75A2823A4797600C25612 /* Published.swift */,
+			);
+			path = "Property Wrappers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD75A2223A475C900C25612 /* LibraryView.swift in Sources */,
+				8CD75A1C23A474DA00C25612 /* AppView.swift in Sources */,
 				8CD759E623A471BC00C25612 /* AppDelegate.swift in Sources */,
+				8CD75A2623A4785500C25612 /* Store.swift in Sources */,
+				8CD75A2923A4797600C25612 /* Published.swift in Sources */,
 				8CD759E823A471BC00C25612 /* SceneDelegate.swift in Sources */,
+				8CD75A2023A475B800C25612 /* HomeView.swift in Sources */,
+				8CD75A1823A4746300C25612 /* SetupView.swift in Sources */,
 				8CD759EA23A471BC00C25612 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

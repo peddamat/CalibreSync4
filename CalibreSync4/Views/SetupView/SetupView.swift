@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SetupView.swift
 //  CalibreSync4
 //
 //  Created by Sumanth Peddamatham on 12/13/19.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SetupView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Setup")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SetupView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SetupView()
     }
 }
